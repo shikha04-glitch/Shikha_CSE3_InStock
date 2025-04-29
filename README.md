@@ -1,4 +1,6 @@
 # 📦 InStock - Smart Inventory & Grocery Management System
+### Website Link
+https://instocks.netlify.app/login.html
 
 ## 👩‍💻 Developers
 
