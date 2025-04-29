@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InStock - Grocery</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <button class="login-btn" onclick="showLogin()">Login</button>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo">InStock.</div>
+    <div class="search-box">
+      <input type="text" id="searchBar" placeholder="Search a product e.g. milk">
+      <button class="search-btn" onclick="searchProduct()">🔍</button>
+    </div>
+    <div class="cart">
+      🛒 <span class="cart-count">0</span>
+    </div>
+  </header>
+
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeLogin()">&times;</span>
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="submitLogin()">Submit</button>
+    </div>
+  </div>
+
+
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <h1>Stock Up on Daily Essentials</h1>
+    <button class="hero-btn" onclick="stockUpNow()">Stock Up Now!!</button>
+  </section>
+
+  <!-- Product Section -->
+  <section class="product-section">
+    <!-- Category Navigation -->
+    <nav class="category-nav">
+      <button id="Inventory" class="tab active-tab" onclick="activateTab('Inventory')">Inventory</button>
+      <button id="Food" class="tab" onclick="activateTab('Food')">Food</button>
+      <button id="Beverages" class="tab" onclick="activateTab('Beverages')">Beverages</button>
+      <button id="Household" class="tab" onclick="activateTab('Household')">Household</button>
+      <button id="PersonalCare" class="tab" onclick="activateTab('PersonalCare')">Personal Care</button>
+    </nav>
+
+    <div class="product-container">
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>InStock is a grocery store that sells groceries.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: info@instock.com</p>
+        <p>Phone: 123-456-7890</p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <p>Facebook: /instock</p>
+        <p>Twitter: @instock</p>
+        <p>Instagram: @instock</p>
+        <p>LinkedIn: /instock</p>
+      </div>
+      <div class="footer-section">
+        <h3>Newsletter</h3>
+        <p>Subscribe to our newsletter to get the latest news and updates.</p>
+        <input type="email" placeholder="Email">
+        <button>Subscribe</button>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 InStock. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="products.js"></script>
+</body>
+
+</html>
